@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 電気関係</title>
+        <meta name="description" content="Rustの公式攻略サイト、Rust Japan wiki【公式】です。最新情報やゲームに関する情報をお届け！">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>電気関係</h1>
+                            </div>
+                            <table border="1">
+                                <tr>
+                                    <th class="three-icon">アイコン</th>
+                                    <th class="three-name">名前</th>
+                                    <th class="three-detail">詳細</th>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/qqmthPhBdO-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ワイヤーツール</td>
+                                    <td class="three-detail">電気の配線を行うのに欠かせないツール。最大100ftまでストックできる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ZdYrbnzSjn-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ホースツール</td>
+                                    <td class="three-detail">水を流す配管をつなぐのに必要。最大100ftまでストックできる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/BTqyrn3OB0.generator.small-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">テスト発電機</td>
+                                    <td class="three-detail">すべての電源を供給する源。最大で1つの電力を供給する。<span class="careful2"> ※現状、ゲーム内にはあるが実装はされていない</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/yXY9KQDmVd.fuelgenerator.small-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">小型発電機</td>
+                                    <td class="three-detail">低湿燃料を消費して40電力を出力する発電機。これ1つで最大3つのオートタレットを稼働させることが可能</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/CEr6S9CVWA.solarpanel.large-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">大きなソーラーパネル</td>
+                                    <td class="three-detail">太陽が当たっているときのみ電力が供給される。「各充電式バッテリー」に接続すればそこへ電力をためることが可能</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ulrdh6ddqL.wind.scrap-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">風力発電機</td>
+                                    <td class="three-detail">昼夜問わずに電力を発電する装置。高ければ高い程より多くの電力を生成する</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ofvgcvITTG.battery.rechargable.small-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">小型充電式バッテリー</td>
+                                    <td class="three-detail">発電する機能はないが電力をためて他へ供給することが可能。主にソーラーパネルとの接続がメイン</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/fLABqbgeVN.battery.rechargable.medium-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">中型充電式バッテリー</td>
+                                    <td class="three-detail">容量は小さくもなく大きくもないほどの電力を貯められる装置</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/sOLUZ6JqEm.battery.rechargable.large-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">大型充電式バッテリー</td>
+                                    <td class="three-detail">上記の「小さい充電式バッテリー」よりも多くの電力をためることができる装置</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/yB7FnjmATs-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">コンピューターステーション</td>
+                                    <td class="three-detail">監視カメラに登録されたIDを入力するとその監視カメラの映像を見ることが可能。詳細は→<a style="color: blue;" href="remote.html">リモートコントロール</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/J95HlMN62s.switch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">スイッチ</td>
+                                    <td class="three-detail">オンで電力を通過し、オフで電力を遮断する</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/nXRD3gr39l.button-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ボタン</td>
+                                    <td class="three-detail">押すと一定時間、回路が通電して自動的に切れる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/r44L1Mskhx.andswitch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">AND回路</td>
+                                    <td class="three-detail">2か所から電力を供給し、<span class="careful4">2つの入力が通電時に出力に電力が流れる回路</span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/LsFxB_uxnF.orswitch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">OR回路</td>
+                                    <td class="three-detail">2か所から電力を供給し、<span class="careful4"> どちらか片方に電力が通電しているときに、出力に電力が流れる回路</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/5gHj0VjmIo.xorswitch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">XOR回路</td>
+                                    <td class="three-detail">2か所から電力を供給し、<span class="careful4"> 2か所の入力が異なっている(片方が通電、片方が遮断)ときにだけ出力に電力が流れる回路</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/RakyROqvt2.timer-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">タイマー</td>
+                                    <td class="three-detail">オンにした時、<span class="careful4">  指定した時間の間だけ出力に電力が流れる回路。</span>出力に電力が流れる時間を変更できる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/_UGDmNvnnT.splitter-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">分配機</td>
+                                    <td class="three-detail">電力出力を3つに分割できる装置。</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/NKig75Mjjs.blocker-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ブロッカー</td>
+                                    <td class="three-detail">2か所の入力があり、Block Passthrough(ブロックパススルー)に通電時、出力の通電を遮断する装置</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/4GmmJIXIv7.counter-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">カウンター</td>
+                                    <td class="three-detail">電力がカウンターを通過した回数を表示する装置。また設定で入力時の電力量(パススルー用)を確認することが可能</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/deIDtESgpC.branch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">分岐器</td>
+                                    <td class="three-detail">指定された電力量を「Branch Out」で出力する装置</td>
+                                </tr>
+                                </table>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <table border="1">
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/h4iJfZZ013.memorycell-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">メモリーセル</td>
+                                    <td class="three-detail">1ビットの情報を記憶する回路。初期通電時は[0]の為Inverted Outputが出力されるが、
+                                        SET通電時に[1]を入力し、OutPutが出力されます。またその後に、SETを遮断したりPower Inを一旦遮断して再通電しても入力された[1]を記憶してるためOutPutが通電され続けます。SETが通電されておらずResetに通電があると[1]が[0]に戻りInverted Outputが出力されます。
+                                        Toggleに通電されると今設定されているビットとは反対の出力に切り替わるようになっています。これはオンオフの繰り返しでも反映されます</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/vaJUygnSrI.combiner-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">混合器</td>
+                                    <td class="three-detail">ソーラーパネル等の低い電力を1つにまとめて出力する装置。ただし入力はバッテリーもしくは発電機系のアイテムしか接続できない</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/Hhz8qvduSQ-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">モジュラー車両押上機</td>
+                                    <td class="three-detail">車両を持ち上げてカスタマイズが出来るようになるアイテム</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/egcU1Qabr3-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ポケベル</td>
+                                    <td class="three-detail">指定した周波数を受信すると音を鳴らす</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ter3GRdouM.rf.receiver-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">無線受信機</td>
+                                    <td class="three-detail">無線周波数を受信できる。RF Transmitterとセットで使う</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/S1EVMmkMmO.rf.broadcaster-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">無線送信機</td>
+                                    <td class="three-detail">RF Transmitterの設置型アイテム。電気が流れると設定した周波数で無線信号を発信する</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/SvTgR9o6d5.switch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">スマートスイッチ</td>
+                                    <td class="three-detail">公式アプリ「RUST+」とペアリングすると、アプリから
+                                        スイッチのONOFFの切り替えが可能になる。詳細はこちら→<a style="color: blue;" href="app.html">コンパニオンアプリ</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ehdygyq0ZB.alarm-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">スマートアラーム</td>
+                                    <td class="three-detail">公式アプリ「RUST+」とペアリングすると、通電時にアプリがある携帯に通知が飛ぶようになってる。詳細はこちら→<a style="color: blue;" href="app.html">コンパニオンアプリ</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/cDbKBzerHZ.monitor-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name"></td>
+                                    <td class="three-detail">公式アプリ「RUST+」とペアリングすると、アプリから工具棚、木箱の在庫状況を見ることができる。詳細はこちら→<a style="color: blue;" href="app.html">コンパニオンアプリ</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/OEkryV48Lc-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">エレベーター</td>
+                                    <td class="three-detail">最大6階まで設置できるエレベーターで1階につき1個必要となる。</td>
+                                        <td>Call Elevator]でエレベーターを呼び、「1階上昇」「最上階まで上昇」と「1階下降」「最下階まで下降」のボタンを押せる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/qvydYZqx5T.laserdetector-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">レーザーセンサー</td>
+                                    <td class="three-detail">パワーオンすると、壁から赤い線が放射され、赤い線が何かを検出すると電力が流れる仕組み</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/Qcl6DkJZfQ.pressurepad-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">感圧版</td>
+                                    <td class="three-detail">プレイヤーがその上に乗れば電源が流れる。別途の「ドアコントローラー」を使えば自動ドアにもなる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/pa8ptUbgKF.doorcontroller-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ドアコントローラー</td>
+                                    <td class="three-detail">ドアの開閉に必要な装置。電源が流れているときにドアが開く</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/xcYXrm56mn.hbhfsensor-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">HBHFセンサー</td>
+                                    <td class="three-detail">置いてある目の前の半径20メートル内の人数をパススルーで送信できる。カウンターにつなぐだけで近くの人数を表示することができる。</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/3vlvbWloab.igniter-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">点火器</td>
+                                    <td class="three-detail">点火器を起動すると近くの火を使うオブジェクトを点火させることが可能</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/yFC3ErEh8Y.random.switch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">RAND スイッチ</td>
+                                    <td class="three-detail">乱数に基づくパススルーを許可する。ゲーム、トラップなどに使える（ネタアイテム)</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/ybWwS1Ax0W.audioalarm-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">アラーム</td>
+                                    <td class="three-detail">電気が流れるとアラームが鳴る</td>
+                                </tr><tr>
+                                    <td class="three-icon"><img src="article/image/elext/QsFc19tiFU.simplelight-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">簡素なライト</td>
+                                    <td class="three-detail">電源が流れているときに発行するライト。シーリングライトのLED壁掛け版</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/1c89931123cbb8ff-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">サーチライト</td>
+                                    <td class="three-detail">EキーでUSEと選択すれば、視点が動くのと一緒にサーチライトも一緒に動くので銃を構えながらでもできる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/adbc8a625313c6e0-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">シーリングライト</td>
+                                    <td class="three-detail">上から吊るし、下をぼんやりと照らしてくれる、飛び道具が当たるとゆらゆらと揺れる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/9_rOhZYTZG.flasherlight-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ストロボライト</td>
+                                    <td class="three-detail">チカチカと青色に点滅するライト</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/cHCMESjmRx.sirenlight-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">回転灯</td>
+                                    <td class="three-detail">円を1週する赤いライト。パトランプみたいなやつ</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/7I17au59ES.heater-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">電気ヒーター</td>
+                                    <td class="three-detail">壁に設置することができ、電源を入れると暖かい風が流れて濡れた体、凍えた体を温めてくれる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/08d12c806a956aa8-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ノックダウン標的</td>
+                                    <td class="three-detail">エイム力を鍛えるのにもってこいのアイテム。ちゃんと体力100と同じ状態</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/id_WHN3_PO.lightstring.advanced-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">デラックスクリスマスライト</td>
+                                    <td class="three-detail">クリスマス用のライト。七色に点灯する</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/RD69coMkLy.neon.xl-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">大きなネオン看板</td>
+                                    <td class="three-detail">点灯すると書いた文字が光る看板</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/PhO3SWMlvn.neon.xl.animated-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">大きなアニメーションネオン看板</td>
+                                    <td class="three-detail">最大5つレイヤーまで書くことができ、点灯すると順番に点灯する看板</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/hKAxgzK7m6.neon.125x215-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">中ぐらいのネオン看板</td>
+                                    <td class="three-detail">点灯すると書いた文字が光る看板</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/70GHGy3PYu.neon.125x215.animated-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">中ぐらいのアニメーションネオン看板</td>
+                                    <td class="three-detail">最大5つレイヤーまで書くことができ、点灯すると順番に点灯する看板</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/KTiB4W81ts.neon.125x125-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">小さなネオン看板</td>
+                                    <td class="three-detail">点灯すると書いた文字が光る看板</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/InD5lWmEwL.teslacoil-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">テスラコイル</td>
+                                    <td class="three-detail">送る電力量によってダメージが変わるトラップ向けのアイテム。
+                                        範囲は土台約1.5枚分。また稼働中、このアイテムの耐久が減る(約2HP)。電力量によって与えられる<span class="careful2">  最大ダメージ量は35HP</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/TPU5OfQQcM-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">オートタレット</td>
+                                    <td class="three-detail">2020年2月7日に大幅変更 銃火器と弾を中に入れ、リストに登録されていない敵を射撃する装置。
+                                        電気の入力は[<span class="careful4">Has Target</span>]:敵を認識時に出力, [<span class="careful4">Low Ammo</span> ]
+                                        タレット内が50発以下の時に出力, [<span class="careful4">No Ammo</span>]タレット内の弾薬がなくなった時に出力。電力がない場合は稼働しない。
+                                        また武装したプレイヤーを攻撃する<span class="careful">平和維持モード</span>というものが存在する。認識範囲は正面から180度で敵補足時は360度回転をする。
+                                        詳細はこちら→<a style="color: blue;" href="autotaret">オートタレット2.0</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/_lzEmz2WCy.cabletunnel-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ケーブルトンネル</td>
+                                    <td class="three-detail">壁に電気配線を通すために必要なアイテム。<span class="careful2"> ※現在はこれなしで配線ができるため完全にお役御免</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/RSWBjGXvxS.switch-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">液体スイッチ&ポンプ</td>
+                                    <td class="three-detail">水の流れを止めることができるスイッチ</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/F199GoufM4.splitter-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">液体分配管</td>
+                                    <td class="three-detail">電気の分配器の水配管版。1つの入力で3つの出力に分けれる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/xaTYSYfs6m.sprinkler-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">スプリンクラー</td>
+                                    <td class="three-detail">水を散布するアイテム。散布範囲は4マスの天井の中心に設置して土台4マス分</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/pbZjpDZ1u2-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">ウォーターポンプ</td>
+                                    <td class="three-detail">水源に設置して水をくみ上げる装置。ある程度の深さがないと設置できない。20秒に30mlの水をくみ上げる</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/zluxlcASQ6.water.purifier-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">電気浄水器</td>
+                                    <td class="three-detail">塩水を真水に浄化してくれる装置。1分間に150mlの塩水を浄水する</td>
+                                </tr>
+                                <tr>
+                                    <td class="three-icon"><img src="article/image/elext/JvDrswiMZy.combiner-s.png" loading="lazy" alt=""></td>
+                                    <td class="three-name">流体混合管</td>
+                                    <td class="three-detail">3つの流体入力を1つの出力にまとめることができる管</td>
+                                </tr>
+                            </table>
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

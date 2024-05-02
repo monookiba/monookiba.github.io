@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 食べ物 回復アイテム</title>
+        <meta name="description" content="食べ物や回復アイテムの情報を掲載。食べ物、回復アイテムに関する情報が必要な方は参考にしてください。">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>食べ物&回復アイテム</h1>
+                            </div>
+                            <div class="weapon-graf">
+                                <table border="1">
+                                    <div>
+                                        <h2>
+                                            回復系
+                                        </h2>
+                                    </div>
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/antiradpills.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">	抗放射線薬</td>
+                                        <td class="three-detail">放射線汚染度を下げる薬。しかし飲むとのどが渇く</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/bandage.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">包帯</td>
+                                        <td class="three-detail">出血状態を止めることが可能。右クリックで仲間を回復させることが可能。僅かに回復する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/syringe.medical.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">注射器</td>
+                                        <td class="three-detail">出血状態を止めることはないが即時回復と包帯よりも徐々に回復していく。右クリックで仲間に使用することも可能。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/largemedkit.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">救急キット(大)</td>
+                                        <td class="three-detail">一部の異常状態を直し徐々に全快させるキット。自分にしか使用できない。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/blood.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">血液</td>
+                                        <td class="three-detail">今現在は管理者権限しか手にすることができないアイテム。</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <div>
+                                        <h2>
+                                            フード系
+                                        </h2>
+                                    </div>
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/pumpkin.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">カボチャ</td>
+                                        <td class="three-detail">被るのもよし、食べてよし。食べると種に変わり植えることによって栽培が可能。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/corn.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">トウモロコシ</td>
+                                        <td class="three-detail">かぼちゃと同じく、食べると種に変わり、栽培が可能。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/potato.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ジャガイモ</td>
+                                        <td class="three-detail">カロリーが高い。食べると種に変わり栽培が可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/mushroom.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">キノコ</td>
+                                        <td class="three-detail">基本は地面に生えている。食べても問題なし。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/black.raspberries.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブラックベリー</td>
+                                        <td class="three-detail">フード木箱からたまに出る。HPがかなり回復する。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/cactusflesh.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">サボテン</td>
+                                        <td class="three-detail">通称：サボ肉　食べるとそれなりに回復する。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/blueberries.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブルーベリー</td>
+                                        <td class="three-detail">フード木箱からたまに出る。HPがかなり回復する。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/jar.pickle.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ピクルス</td>
+                                        <td class="three-detail">うまい時もあればマズくて吐き出すときもある</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/can.tuna.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ツナの缶詰</td>
+                                        <td class="three-detail">食べると空の缶詰に変わる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/can.beans.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">豆の缶詰</td>
+                                        <td class="three-detail">食べると空の缶詰に変わる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/granolabar.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">シリアルバー</td>
+                                        <td class="three-detail">食べるとそれなりに飢えをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/chocholate.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">チョコバー</td>
+                                        <td class="three-detail">日本で言うカロリーメイトのチョコ味</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/apple.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">リンゴ</td>
+                                        <td class="three-detail">なぜか木からではなくドラム缶などから取れる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/smallwaterbottle.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">小さな水ボトル</td>
+                                        <td class="three-detail">採水器や川から水を汲むことができる。また右クリックでちょっとした火を消すことも可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/waterjug.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">水差し</td>
+                                        <td class="three-detail">5000mlの水をためることが可能。飲むこともできるが主に、農業用での水の運搬向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/fish.troutsmall.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">小さなマス</td>
+                                        <td class="three-detail">このままでは食べれないためカットすると切り身が4つ、骨の破片が5つとれる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/fish.minnows.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">小魚</td>
+                                        <td class="three-detail">小さい魚。このまま食べることができ、食べると骨の破片が2つ手に入る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/chicken.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のトリ肉</td>
+                                        <td class="three-detail">生のトリ肉。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/deermeat.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のシカ肉</td>
+                                        <td class="three-detail">生のシカの肉。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/meat.boar.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のブタ肉</td>
+                                        <td class="three-detail">生のブタ肉。食べるとダメージ受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/bearmeat.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のクマ肉</td>
+                                        <td class="three-detail">生のクマ肉。食べるとダメージ受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/wolfmeat.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のオオカミ肉</td>
+                                        <td class="three-detail">生のオオカミ肉。食べるとダメージ受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/horsemeat.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生のウマ肉</td>
+                                        <td class="three-detail">生のウマ肉。食べるとダメージ受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/humanmeat.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生の人肉</td>
+                                        <td class="three-detail">生の人肉。食べるとダメージ受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/fish.raw.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">生の魚</td>
+                                        <td class="three-detail">生の魚肉。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/chicken.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理したトリ肉</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/deermeat.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理したシカ肉</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/meat.pork.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">	調理したブタ肉</td>
+                                        <td class="three-detail">食べると飢えが絶大にしのげる。旨い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/bearmeat.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理したクマ肉</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/wolfmeat.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理したオオカミ肉</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/horsemeat.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理したウマ肉</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/humanmeat.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理した人肉</td>
+                                        <td class="three-detail">食べると飢えをしのげるが、のどが渇きやすくなる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/fish.cooked.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">調理した魚</td>
+                                        <td class="three-detail">食べると飢えと渇きをしのげる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/chicken.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたトリ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/deermeat.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたシカ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/meat.pork.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたブタ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/bearmeat.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたクマ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/wolfmeat.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたオオカミ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/horsemeat.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げたウマ肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/humanmeat.burned.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">焦げた人肉</td>
+                                        <td class="three-detail">焼きすぎ。食べるとダメージを受ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/chicken.spoiled.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">腐ったトリ肉</td>
+                                        <td class="three-detail">完全に腐ってる。絶対に食べたくない。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/wolfmeat.spoiled.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">腐ったオオカミ肉</td>
+                                        <td class="three-detail">完全に腐ってる。絶対に食べたくない。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/humanmeat.spoiled.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">腐った人肉</td>
+                                        <td class="three-detail">完全に腐ってる。ゾンビになるかも・・・？</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/apple.spoiled.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">腐ったリンゴ</td>
+                                        <td class="three-detail">完全に腐ってるが何故か少し回復する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.pumpkin.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">カボチャの種</td>
+                                        <td class="three-detail">カボチャの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.pumpkin.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">カボチャのクローン</td>
+                                        <td class="three-detail">カボチャのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.corn.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">トウモロコシの種</td>
+                                        <td class="three-detail">トウモロコシの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.corn.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">トウモロコシのクローン</td>
+                                        <td class="three-detail">トウモロコシのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.potato.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ジャガイモの種</td>
+                                        <td class="three-detail">ジャガイモの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.potato.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ジャガイモのクローン</td>
+                                        <td class="three-detail">ジャガイモのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.hemp.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">麻の種</td>
+                                        <td class="three-detail">布の元である麻の種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.hemp.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">麻のクローン</td>
+                                        <td class="three-detail">布の元である麻のクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/candycane.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">キャンディーケイン</td>
+                                        <td class="three-detail">クリスマスイベント限定。めちゃくちゃ回復する</td>
+                                    </tr>
+                                </table>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <table>
+                                    <div>
+                                        <h2>
+                                            ティー関連
+                                        </h2>
+                                    </div>
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/healingtea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的なヒーリングティー	</td>
+                                        <td class="three-detail">自然回復 +30HPの効果を得られるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/maxhealthtea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的な最大ヘルスティー</td>
+                                        <td class="three-detail">30分間、最大体力を105HPまで増加させるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/oretea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">	基本的な鉱石ティー</td>
+                                        <td class="three-detail">30分間、鉱石の採掘量を20%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/woodtea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的なウッドティー</td>
+                                        <td class="three-detail">30分間、木材の採取量を50%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/scraptea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的なスクラップティー</td>
+                                        <td class="three-detail">30分間、ドラム缶からのスクラップ収集量を50%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationremovetea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的な放射線除去ティー</td>
+                                        <td class="three-detail">放射線を-6除去するお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationresisttea.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">基本的な抗放射線ティー</td>
+                                        <td class="three-detail">30分間、50%の被ばくを抑えるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/healingtea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度なヒーリングティー</td>
+                                        <td class="three-detail">即時回復+5HP。自然回復+50HPの効果を得られるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/maxhealthtea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度な最大ヘルスティー</td>
+                                        <td class="three-detail">30分間、最大体力を130HPまで増加させるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/oretea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度な鉱石ティー</td>
+                                        <td class="three-detail">30分間、鉱石の採掘量を35%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/woodtea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度なウッドティー</td>
+                                        <td class="three-detail">30分間、木材の採取量を100%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/scraptea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度なスクラップティー</td>
+                                        <td class="three-detail">30分間、ドラム缶からのスクラップ収集量を100%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationremovetea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度な放射線除去ティー</td>
+                                        <td class="three-detail">放射線を-8除去するお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationresisttea.advanced.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高度な抗放射線ティー</td>
+                                        <td class="three-detail">30分間、50%の被ばくを抑えるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/healingtea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋なヒーリングティー</td>
+                                        <td class="three-detail">即時回復+10HP。自然回復+75HPの効果を得られるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/maxhealthtea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋な最大ヘルスティー</td>
+                                        <td class="three-detail">30分間、最大体力を130HPまで増加させるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/oretea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋な鉱石ティー</td>
+                                        <td class="three-detail">30分間、鉱石の採掘量を50%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/woodtea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋なウッドティー</td>
+                                        <td class="three-detail">5分間、木材の採取量を200%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/scraptea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋なスクラップティー</td>
+                                        <td class="three-detail">30分間、ドラム缶からのスクラップ収集量を200%増やすお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationremovetea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋な放射線除去ティー</td>
+                                        <td class="three-detail">放射線を-10除去するお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/radiationresisttea.pure.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">純粋な抗放射線ティー</td>
+                                        <td class="three-detail">30分間、50%の被ばくを抑えるお茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/red.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">レッドベリー</td>
+                                        <td class="three-detail">赤色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/blue.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブルーベリー</td>
+                                        <td class="three-detail">青色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/green.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">グリーンベリー</td>
+                                        <td class="three-detail">緑色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/yellow.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">イエローベリー</td>
+                                        <td class="three-detail">黄色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/white.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ホワイトベリー</td>
+                                        <td class="three-detail">白色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/black.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブラックベリー</td>
+                                        <td class="three-detail">黒色のベリー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.red.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">レッドベリーの種</td>
+                                        <td class="three-detail">赤色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.blue.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブルーベリーの種</td>
+                                        <td class="three-detail">青色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.green.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">グリーンベリーの種</td>
+                                        <td class="three-detail">緑色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.yellow.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">イエローベリーの種</td>
+                                        <td class="three-detail">黄色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.white.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ホワイトベリーの種</td>
+                                        <td class="three-detail">白色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/seed.black.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブラックベリーの種</td>
+                                        <td class="three-detail">黒色のベリーの種</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.red.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">レッドベリーのクローン</td>
+                                        <td class="three-detail">赤色のベリーのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.blue.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブルーベリーのクローン</td>
+                                        <td class="three-detail">青色のベリーのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.green.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">グリーンベリーのクローン</td>
+                                        <td class="three-detail">緑色のベリーのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.yellow.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">イエローベリーのクローン</td>
+                                        <td class="three-detail">黄色のベリーのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.white.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ホワイトベリーのクローン</td>
+                                        <td class="three-detail">白色のベリーのクローン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/food/clone.black.berry.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ブラックベリーのクローン</td>
+                                        <td class="three-detail">黒色のベリーのクローン</td>
+                                    </tr>
+                                </table>
+                            </div>    
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

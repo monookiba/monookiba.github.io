@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 レイド</title>
+        <meta name="description" content="今回はRustの醍醐味のレイドについて解説していきます！初心者目線での解説となりますので無知な方でも安心して閲覧していただけます。">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>レイド</h1>
+                            </div>
+                            <img class="special-img" src="article/image/raid/h1.png" loading="lazy" alt="">
+                            <div class="index-1">
+                                <ul>
+                                    <li>・レイドとは</li>
+                                    <li>・それぞれの耐久値と抜くのに必要な爆発物の量</li>
+                                    <li>・抜き方講座</li>
+                                    <li>・さぁレイドしよう！</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>
+                                    レイドとは？
+                                </h3>
+                            </div>
+                            <p>レイドとは敵の拠点を攻めることです。攻めるといってもRustの場合は爆発物などを用いて拠点を破壊し内部に侵入することを意味します。</p>
+                            <div>
+                                <h3>
+                                    何を使うの？
+                                </h3>
+                            </div>
+                            <p>基本的には「C4」「梱包爆弾」「火炎放射器」「炸裂弾」「ロケット」「ショットガン系」「火の矢」
+                                などを適材適所で使っていきます。</p>
+                                <p>壁や扉には耐久値があり、素材がよくなればよくなるほどその耐久値は高くなります。</p>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                            <table border="1">
+                                <tr>
+                                    <th>画像</th>
+                                    <th>名前</th>
+                                    <th>耐久値</th>
+                                    <th>破壊に必要な物</th>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h4.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">木</td>
+                                    <td style="width: 20%;">250</td>
+                                    <td style="width: 40%;">
+                                        <ul>
+                                            <li>C4:1個</li>
+                                            <li>梱包爆弾:3個</li>
+                                            <li>炸裂弾:65発</li>
+                                            <li>ロケット弾:2発</li>
+                                            <li>グレネードランチャー:6発</li>
+                                            <li>豆缶グレ:13個</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h1.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">石</td>
+                                    <td style="width: 20%;">500</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:2個</li>
+                                        <li>梱包爆弾:10個</li>
+                                        <li>炸裂弾:222発</li>
+                                        <li>ロケット弾:4発</li>
+                                        <li>グレネードランチャー:20発</li>
+                                        <li>豆缶グレ:46個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h5.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">板金</td>
+                                    <td style="width: 20%;">1000</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:4個</li>
+                                        <li>梱包爆弾:23個</li>
+                                        <li>炸裂弾:399発</li>
+                                        <li>ロケット弾:8発</li>
+                                        <li>グレネードランチャー:40発</li>
+                                        <li>豆缶グレ:112個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h6.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">装甲板</td>
+                                    <td style="width: 20%;">2000</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:6個</li>
+                                        <li>梱包爆弾:46個</li>
+                                        <li>炸裂弾:800発</li>
+                                        <li>ロケット弾:15発</li>
+                                        <li>グレネードランチャー:80発</li>
+                                        <li>豆缶グレ:223個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h7.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">木の外壁</td>
+                                    <td style="width: 20%;">500</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:2個</li>
+                                        <li>梱包爆弾:6個</li>
+                                        <li>炸裂弾:175発</li>
+                                        <li>ロケット弾:3発</li>
+                                        <li>グレネードランチャー:11発</li>
+                                        <li>豆缶グレ:26個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h8.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">石の外壁</td>
+                                    <td style="width: 20%;">500</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:2個</li>
+                                        <li>梱包爆弾:10個</li>
+                                        <li>炸裂弾:433発</li>
+                                        <li>ロケット弾:4発</li>
+                                        <li>グレネードランチャー:20発</li>
+                                        <li>豆缶グレ:46個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h9.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">木のドア</td>
+                                    <td style="width: 20%;">200</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:1個</li>
+                                        <li>梱包爆弾:2個</li>
+                                        <li>炸裂弾:26発</li>
+                                        <li>ロケット弾:1発</li>
+                                        <li>グレネードランチャー:2発</li>
+                                        <li>豆缶グレ:6個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h10.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">板金のドア</td>
+                                    <td style="width: 20%;">250</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:1個</li>
+                                        <li>梱包爆弾:4個</li>
+                                        <li>炸裂弾:63発</li>
+                                        <li>ロケット弾:2発</li>
+                                        <li>グレネードランチャー:7発</li>
+                                        <li>豆缶グレ:18個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h11.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">装甲板のドア</td>
+                                    <td style="width: 20%;">800</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:2個</li>
+                                        <li>梱包爆弾:12個</li>
+                                        <li>炸裂弾:334発</li>
+                                        <li>ロケット弾:4発</li>
+                                        <li>グレネードランチャー:20発</li>
+                                        <li>豆缶グレ:56個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h12.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">梯子付き昇降口</td>
+                                    <td style="width: 20%;">250</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:1個</li>
+                                        <li>梱包爆弾:4個</li>
+                                        <li>炸裂弾:65発</li>
+                                        <li>ロケット弾:2発</li>
+                                        <li>グレネードランチャー:7発</li>
+                                        <li>豆缶グレ:18個</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><img src="article/image/raid/h13.png" loading="lazy" alt=""></td>
+                                    <td style="width: 20%;">ガレージドア</td>
+                                    <td style="width: 20%;">600</td>
+                                    <td style="width: 40%;"><ul>
+                                        <li>C4:2個</li>
+                                        <li>梱包爆弾:9個</li>
+                                        <li>炸裂弾:150発</li>
+                                        <li>ロケット弾:3発</li>
+                                        <li>グレネードランチャー:15発</li>
+                                        <li>豆缶グレ:42個</li>
+                                    </ul></td>
+                                </tr>
+                               
+                            </table><br>
+                            <p>木の壁やドアの場合は例外的に近接武器やショットガン、火炎放射器でも破壊可能です。石以上だとかなり時間がかかります。</p>
+                            <div>
+                                <h3>
+                                    簡単なレイドの紹介 その１
+                                </h3>
+                            </div>
+                            <p>上のグラフをもとに素材を集めて物資を集めてもらうわけですが、その前にどれくらいの量が必要なのかを計算することが必要です。そこで何件かよくある拠点を挙げて紹介していきます。</p>
+                            <img class="xmas2" src="article/image/raid/h14.png" loading="lazy" alt="">
+                            <p>こちらはよくあるいわゆる「2かけ1拠点」です</p>
+                            <img class="xmas2" src="article/image/raid/h15.png" loading="lazy" alt="">
+                            <p class="careful2">※内部はこんな感じです</p>
+                            <p>炸裂弾を使って破壊する場合にはドアから抜いて行きましょう。なぜなら、石の壁を壊すには炸裂弾が222発程必要です。しかし、板金の扉は63発で壊せるので最大で三枚ドアがあっても189発と、壁を壊すよりお得です。</p>
+                            <p>C4を使う場合は外の壁、タンスのある一番奥の壁に貼り付けて壊しましょう。ドアが三枚あった場合にC4だと足りないのと、壁を壊すと中に敵がいても戦いやすいです。</p>
+                            <p>ロケット弾を使う場合は屋根から狙いましょう。</p>
+                            <img class="xmas2" src="article/image/raid/h16.png" loading="lazy" alt="">
+                            <p>画像の赤丸の部分を狙いましょう。<span class="careful2"> ロケット弾は範囲ダメージがあるので一度に複数の壁を破れます。</span>出来れば手前の赤丸の部分を狙って屋根三枚抜きをするのがいいですが、自信がない場合は奥の丸を狙って二枚抜きでも問題ありません。</p>
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                                                            </div>   
+                            <div>
+                                <h3>
+                                    簡単なレイドの紹介 その２
+                                </h3>
+                            </div>
+                            <img class="xmas2" src="article/image/raid/h17.png" loading="lazy" alt="">
+                            <p>こちらもよくある「2かけ2拠点」です。基本的にハニカムされているので抜きづらくなっています。また、この構造は最大で扉が5～6枚ほどです。</p>
+                            <p class="careful2">※ハニカムとは、拠点の基本土台、壁の周りに三角の土台を建て、壁をつけることでC4での
+                                壁一枚抜きを防ぐように強化することです。上からロケットで抜かれるのを防ぐために今回のように、屋根の上にハーフブロックで一段上げることも多いです。</p>
+                            <p>この拠点は外側から抜くことはおすすめできません。というのも、ハニカムの内側が装甲板かも知れないからです。</p>
+                            <img class="xmas2" src="article/image/raid/h18.png" loading="lazy" alt="">
+                            <p>内側にガレージ扉がないことを事前にチェック(拠点の近くで隠れて音を聞いたり)して大丈夫だったら真正面の扉から抜いていきましょう。
+                            </p>
+                            <div>
+                                <h3>
+                                    いざレイドへ！
+                                </h3>
+                            </div>
+                            <p>準備が整ったらレイドに行きましょう。基本的にはレイドする拠点のすぐ近くに仮拠という簡易的な拠点を建てます。爆発物の音はかなりの範囲まで聞こえるのでたくさん人が寄ってくるからです。
+                                タレットはできるだけあったほうがいいですがなくても問題ありません。仮拠も必要ないと感じたら作る必要はありません。
+                            </p>
+                            <img class="xmas2" src="article/image/raid/h20.png" loading="lazy" alt="">
+                            <p>最深部までたどり着きタンスを見つけ破壊したらレイド成功です。レイドはアイテムもそうですが、タンスを奪うことが目標でもあります。タンスを奪うことでドアをつけられるようになるので安全に物資の移動
+                                ができるようになったり、相手の家を完全に風化させ二度と復旧できないようにもできます。（タンスを奪わないとまた復旧して仕返しされることも多いです。）</p>
+                            <p>そしてアイテムを持って帰るまでがレイドなので寄り道をせずまっすぐ安全に帰りましょう。</p>                  
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

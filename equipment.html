@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 装備</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>服&装備</h1>
+                            </div>
+                            <div>
+                                <h3>頭</h3>
+                            </div>
+                            <div class="weapon-graf">
+                                <table border="1">
+                                    <tr>
+                                    <th class="equip-icon">アイコン</th>
+                                    <th class="equip-name">名前</th>
+                                    <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/metal.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">メタルマスク</td>
+                                        <td class="equip-detail">直接攻撃にも強い防護マスク。ガチ装備の1つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zyusou.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">重装ヘルメット</td>
+                                        <td class="equip-detail">メタルフェイスマスクと同等の防護力があるヘルメット。ただし、焼夷弾のダメージにかなり弱い。身に着けると歩く速度が低下</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/herume.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">暴徒鎮圧用ヘルメット</td>
+                                        <td class="equip-detail">近接攻撃を受け流すのに最適。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/baketu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">バケツヘルメット</td>
+                                        <td class="equip-detail">正面以外からの攻撃に耐えやすい。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/ko-hi-.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">コーヒー缶ヘルメット</td>
+                                        <td class="equip-detail">後ろに弱い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kino.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">木製ヘルメット</td>
+                                        <td class="equip-detail">木でできたヘルメット</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/honeno.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ボーンヘルメット</td>
+                                        <td class="equip-detail">最低限の頭防具</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/ookami.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">オオカミの頭巾</td>
+                                        <td class="equip-detail">身に着けると温かい</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/cass.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">Clatterヘルメット</td>
+                                        <td class="equip-detail">バケツヘルメットと同じ性能。Steamゲーム「Clatter」を一定時間プレイすると入手できる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/night.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">暗視ゴーグル</td>
+                                        <td class="equip-detail">最大15分のバッテリーを搭載し<span class="careful">ワークベンチレベル2以上</span>で充電可能。「Fキー」でナイトビジョンをON/OFFに切り替えれる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/nit.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ニット帽</td>
+                                        <td class="equip-detail">頭を最低限隠すのに最適。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/cap.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">野球帽</td>
+                                        <td class="equip-detail">どこのチームのだろうか。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/himawari.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ブーニーハット</td>
+                                        <td class="equip-detail">ただの帽子。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/banndana.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">フェイスマスク</td>
+                                        <td class="equip-detail">口元を隠せる。一種の強盗スタイル。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/sokuseki.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">即席の目出し帽</td>
+                                        <td class="equip-detail">さぁ、人の家へ侵入だ！</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/miira.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻の頭巾</td>
+                                        <td class="equip-detail">麻で作られた頭巾</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/rousoku.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ロウソク帽子</td>
+                                        <td class="equip-detail">着用してONにすると火が付き周りを少し照らしてくれる。低質燃料が必要となる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/headrousoku.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">鉱夫向けの帽子</td>
+                                        <td class="equip-detail">着用してONにすると前方を照らしてくれる。低質燃料が必要。燃費はキャンドルハットと同じ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/santa.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">サンタの帽子</td>
+                                        <td class="equip-detail">クリスマスイベント限定の帽子。これであなたもサンタさん</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/santahige.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">サンタのヒゲ</td>
+                                        <td class="equip-detail">クリスマスイベント限定の髭。これであなたもサンタさん</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/nezumi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ネズミのマスク</td>
+                                        <td class="equip-detail">2020年旧正月記念のアイテム。性能はオオカミの頭巾に近い性能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/ushi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">雄牛のマスク</td>
+                                        <td class="equip-detail">2021年旧正月記念のアイテム。性能はオオカミの頭巾に近い性能。性能はオオカミの頭巾に近い性能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/tastu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ドラゴンマスク</td>
+                                        <td class="equip-detail">ドラゴンの顔をしたマスク</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/usagi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ウサギの付け耳</td>
+                                        <td class="equip-detail">イースターイベント用の付け耳。身に着けると卵を見つけやすくなる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/hiyoko.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">巣帽子</td>
+                                        <td class="equip-detail">ひよこの目が動く帽子</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zonbi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">カカシのラップ</td>
+                                        <td class="equip-detail">身に着けるとキャンディーがよく見えるようになる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/pa-thi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">パーティーハット</td>
+                                        <td class="equip-detail">パーティー用の帽子</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/tonakai.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">鹿の角の剥製</td>
+                                        <td class="equip-detail">身に着けるとトナカイに</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/sangurasu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">サングラス</td>
+                                        <td class="equip-detail">かけると、一気にクール！ <span class="careful">※DLC「Rust - Sunburn Pack」を所持していないとクラフト不可能</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/headset.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ヘッドセット</td>
+                                        <td class="equip-detail">配信者であればほとんどの人が身に付けているであろう帽子。<span class="careful">※TwitchDrop限定アイテム</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/gurasan.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">紫のサングラス</td>
+                                        <td class="equip-detail">紫色のサングラス。<span class="careful">※TwitchDrop限定アイテム</span></td>
+                                    </tr>
+                                </table>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <div>
+                                    <h2>胴</h2>
+                                </div>
+                                <table border="1">
+                                    <tr>
+                                    <th class="equip-icon">アイコン</th>
+                                    <th class="equip-name">名前</th>
+                                    <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/gatidou.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">金属の胸当て</td>
+                                        <td class="equip-detail">胴体をカバーする最強の金属板。横に弱い。ガチ装備の1つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zyusouzyake.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">重装ジャケット</td>
+                                        <td class="equip-detail">金属の胸当てよりもさらに防護力が高いジャケット。身に着けるとそこそこ歩く速度が低下</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/ko-hi-zya.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">道路標識のジャケット</td>
+                                        <td class="equip-detail">横からの攻撃に弱い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kinodou.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">木の胸当て</td>
+                                        <td class="equip-detail">木で作られた鎧。胴体上側に弱い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/honenozyake.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ボーンアーマー</td>
+                                        <td class="equip-detail">下半身部が弱い</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/pontyo.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革のポンチョ</td>
+                                        <td class="equip-detail">革で作られたポンチョ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zyaket.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ジャケット</td>
+                                        <td class="equip-detail">頑丈だが昼間に着ると暑い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/tshirt.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">Tシャツ</td>
+                                        <td class="equip-detail">一般的なTシャツ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/nagasode.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">長袖のTシャツ</td>
+                                        <td class="equip-detail">一般的なシャツと変わんない。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/pa-ka-.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">パーカー</td>
+                                        <td class="equip-detail">Tシャツよりも着心地がなかなか良い。ガチ装備の1つ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/shirts.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">シャツ</td>
+                                        <td class="equip-detail">さぁ!面接へ出発だ！</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/tanktop.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">タンクトップ</td>
+                                        <td class="equip-detail">かっこよく着こなそう！</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zubon.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">半ズボン</td>
+                                        <td class="equip-detail">タンクトップと合わせて夏服</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/horuta-.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革のホルターネック</td>
+                                        <td class="equip-detail">麻のシャツの女性バージョンのようなもの。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/nuno-shirt.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻のシャツ</td>
+                                        <td class="equip-detail">麻で作られたシャツ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kawanobest.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革のベスト</td>
+                                        <td class="equip-detail">革で作られたベスト</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/snowzyake.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">スノージャケット</td>
+                                        <td class="equip-detail">寒い場所では必須のジャケット</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/usagi-dou.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">兎のコスチューム</td>
+                                        <td class="equip-detail">兎になれる服。身に着けると卵が見つけやすくなる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kakashi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">かかしスーツ</td>
+                                        <td class="equip-detail">かかしになれる服。目が光る</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zonbi-dou.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ミイラのスーツ</td>
+                                        <td class="equip-detail">ミイラになれる服。目が光る</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/dhimenta-.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ゴーストコスチューム</td>
+                                        <td class="equip-detail">お化けに変装できる服</td>
+                                    </tr>
+                                </table>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <div>
+                                    <h2>腕や腰</h2>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kawanotebukuro.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革の手袋</td>
+                                        <td class="equip-detail">手を守るのに最適。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/asanotebukuro.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻の手袋</td>
+                                        <td class="equip-detail">初期でクラフトできる手袋、性能は革の手袋より劣る</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/dourohyoushiki.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">道路標識グローブ</td>
+                                        <td class="equip-detail">道路標識でできた手袋。戦闘向けではあるが寒さに弱い</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/takutikaru.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">タクティカルグローブ</td>
+                                        <td class="equip-detail">性能もそこそこ高いが、このグローブは<span class="careful">エイム時の呼吸によるブレをなくす</span>という驚異の性能を持っている。</td>
+                                    </tr>
+                                    
+                                </table>
+                                <table>
+                                    <div>
+                                        <h2>下半身</h2>
+                                    </div>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/maedare.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">道路標識の前垂れ</td>
+                                        <td class="equip-detail">唯一、3つ防具を付けられるようにする防具。ガチ装備の1つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/zyuusoupant.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">重装パンツ</td>
+                                        <td class="equip-detail">数少ない下半身の装備。下半身装備ではこれが最も固い。身に着けると歩く速度が低下</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kinomaedare.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">木のすね当て</td>
+                                        <td class="equip-detail">木で作られた粗末なすね当て。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/pants.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ズボン</td>
+                                        <td class="equip-detail">前はちゃんと隠そう。ガチ装備の1つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/suka-to.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻のスカート</td>
+                                        <td class="equip-detail">女性用のスカート</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/asanozubon.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻のズボン	</td>
+                                        <td class="equip-detail">麻で作らてたズボン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/hannzubonn.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革のズボン</td>
+                                        <td class="equip-detail">革で作られたズボン</td>
+                                    </tr>
+                                    
+                                </table> 
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <table>
+                                    <div>
+                                    <h2>靴</h2>
+                                    </div>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bu-tu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ブーツ</td>
+                                        <td class="equip-detail">ワークブーツ。ガチ装備の1つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/asanokutu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">麻の靴</td>
+                                        <td class="equip-detail">麻で作られた靴</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kawanokutu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">革のブーツ</td>
+                                        <td class="equip-detail">革で作られたブーツ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kaeru.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">カエルのブーツ</td>
+                                        <td class="equip-detail">アーリーアクセスをプレイした人限定で入手できるブーツ。性能は大したことない</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <div>
+                                    <h2>セット</h2>
+                                    </div>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bougohuku.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">防護スーツ</td>
+                                        <td class="equip-detail">ダンジョンの放射線を抑える放射線防護スーツ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bougosu-tu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">研究者の防護スーツ</td>
+                                        <td class="equip-detail">AI用の防護スーツのため、一般では手に入らない。しかし管理者権限で取得、身に着けることが可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bougosu-tu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">研究者の防護スーツ(緑)</td>
+                                        <td class="equip-detail">AI用の防護スーツのため、一般では手に入らない。しかし管理者権限で取得、身に着けることが可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bougosu-tu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">重装研究者の防護スーツ	</td>
+                                        <td class="equip-detail">AI用の防護スーツのため、一般では手に入らない。しかし管理者権限で取得、身に着けることが可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/kibako.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">木箱のコスチューム</td>
+                                        <td class="equip-detail">木箱に変装できるスーツ。しかし装備中は武器を構えられない</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bareru.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">バレルのコスチューム</td>
+                                        <td class="equip-detail">着てしゃがめば案外ごまかせるかも？ギリースーツの原人版</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/sukurabu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">外科医のスクラブ</td>
+                                        <td class="equip-detail">ハロウィン限定販売される一式セットの服。防具などは身に着けられなく性能は防護スーツのやや劣化版という感じ</td>
+                                    </tr>
+                                </table> 
+                                <table>
+                                    <div>
+                                    <h2>水中セット</h2>
+                                    </div>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/masuku.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ダイビングマスク</td>
+                                        <td class="equip-detail">水中のくすんだ視界がクリアになる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/wetsu-tu.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">ウェットスーツ</td>
+                                        <td class="equip-detail">水中の寒さに耐えられる服</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bonbe.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">酸素ボンベ</td>
+                                        <td class="equip-detail">10分間水中に潜ることができるタンク。<span class="careful"> エアーがなくなったらワークベンチで補給できる。</span>ただし耐久性は下がる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/shihire.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">足ヒレ</td>
+                                        <td class="equip-detail">水中を自由自在に泳ぐことができる</td>
+                                    </tr>
+                                </table>        
+                                <table>
+                                    <div>
+                                    <h2>馬専用</h2>
+                                    </div>
+                                    <tr>
+                                        <th class="equip-icon">アイコン</th>
+                                        <th class="equip-name">名前</th>
+                                        <th class="equip-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/sadoru.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">馬のサドル</td>
+                                        <td class="equip-detail">厩舎のNPCから購入できるアイテム。このアイテムを所持していると厩舎にいる馬を獲得することができる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/yoroi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">木製の馬の鎧</td>
+                                        <td class="equip-detail">プレイヤーと馬を守る鎧。ただし身に着けると-10.8km/h遅くなるがストレージを6スロット増やす</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/dourohyoushiki-uma.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">道路標識の馬の鎧</td>
+                                        <td class="equip-detail">プレイヤーと馬を守る鎧で木製の馬鎧より耐久値が高い。ただし身に着けると21.6km/h遅くなるがストレージを6スロット増やす</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/ashi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">普通の馬の靴</td>
+                                        <td class="equip-detail">馬のひづめの摩擦を防ぐ物。身に着けると移動最大速度が5.4km/h早くなる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/tetunoashi.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">上質な馬の靴</td>
+                                        <td class="equip-detail">馬のひづめの摩擦を防ぐ物。身に着けると移動最大速度が+9km/h早くなる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="equip-icon"><img src="article/image/equip/bag.png" loading="lazy" alt=""></td>
+                                        <td  class="equip-name">サドルバック</td>
+                                        <td class="equip-detail">馬に6スロットのストレージが増えるがバック1つにつき移動最大速度が3.6km/h遅くなる</td>
+                                    </tr>
+                                </table>                      
+                            </div>
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

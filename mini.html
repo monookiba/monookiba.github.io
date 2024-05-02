@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 ミニコプター</title>
+        <meta name="description" content="Rustのミニコプターの操作方法から詳細情報まで掲載！ おすすめミニコプター練習サーバーも掲載中。">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>ミニコプター</h1>
+                            </div>
+                            <p class="usuku">2019年2月8日に実装された空中の乗り物(二人乗り)です。</p>
+                            <img src="article/image/mini/9-front_left-passengers-zoomed.webp" loading="lazy" alt="">
+                            <div>
+                                <h3>どこにあるの？</h3>
+                            </div>
+                            <p><span class="careful">※2020年7月3日の車両実装により、自然スポーンしなくなりました。</span></p> 
+                            <p>入手方法は➡<span><a href="camp.html" style="display:inline; color: blue;" >バンディットキャンプ</a>のエアーウルフというお店での購入</span></p>
+                            <div>
+                                <h3>どうやって動かすの？</h3>
+                            </div>
+                            <p>燃料は<span class="careful">低質燃料</span>（毎分30低質）</p>
+                            <p>マウスで方向(角度）、W,Sで高度の調整、A,Dで左右移動。
+                                例として、マウスを奥方向にほんの少し動かすと加速、手前方向に動かすと減速になります。(感度にもよりますが、ほんの少しじゃないと墜落します)
+                                墜落しないコツとして、ヘリの車体を水平にすると墜落しにくいです。←（あくまでも例です）
+                                duck(ctrlキー)を押しながらWASDで、ミニコプターを車のように地上で運転できます。</p>
+                                <p>また現在の燃料がどれぐらいあるかは運転席の右側のゲージから確認が出来ます。</p>
+                            <img class="xmas3" src="article/image/mini/GAMuLzyPyM.png" loading="lazy" alt="">
+                            <div>
+                                <h3>何人まで乗れるの？</h3>
+                            </div>
+                            <p>二人乗り。座席は「X」キーで変更できますが、<span class="careful2">※運転中に助手席に移るとエンジンが停止して急激に高度が下がります。</span> </p>
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                                                            </div>   
+                            <div>
+                                <h3>耐久は？直せるの？</h3>
+                            </div>
+                            <p>耐久は<s>1000</s>→750。修理の方法は、ハンマーを使って金属片で修理できます。また壊れる直前からの修復で最大「金属片:250」の資材を消費します。</p>
+                            <div>
+                                <h3>風化するの？</h3>
+                            </div>
+                            <p>どこに置いても風化します。ですが建築権内かつ、屋根がある所では風化の速度が半分になります。</p>
+                               <p><span class="careful2">屋外の場合</span><s> 3時間 </s>8時間、<span class="careful2">屋内の場合</span><s> 6時間 </s>36時間で壊れます。</p>
+                            <div>
+                                <h3>迎撃手段は？</h3>
+                            </div>
+                            <p>SAMサイト(地対空)での迎撃。(6発のミサイルで壊れます。)
+                                銃でもダメージは入ります</p>
+                            <div>
+                                <h3>動かせるの？</h3>
+                            </div>
+                            <p>2020年7月3日のアップデートでプッシュできるようになりました</p>
+                            <img class="xmas3" src="article/image/mini/CtyZwUJ3DP.png" loading="lazy" alt="">
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

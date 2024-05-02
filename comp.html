@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 コンポーネント</title>
+        <meta name="description" content="Rustにおけるコンポーネント(部品)の情報を掲示。コンポーネントの情報が必要な方はご参照ください">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+        <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>コンポーネント</h1>
+                            </div>
+                            <div class="weapon-graf">
+                                <table border="1">
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/fuse.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">電気ヒューズ</td>
+                                        <td class="three-detail">専用のボックスに入れることで一定時間、電力を通電させることが可能。修復不可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/gears.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">歯車</td>
+                                        <td class="three-detail">ドアや外壁等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/rope.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ロープ</td>
+                                        <td class="three-detail">防具や梯子、裁縫セット等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/tarp.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">防水シート</td>
+                                        <td class="three-detail">防護スーツや採水器等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/techparts.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ガラクタ</td>
+                                        <td class="three-detail">時限爆弾や電子機器等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/propanetank.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">空っぽのプロパンガスボンベ</td>
+                                        <td class="three-detail">火炎放射器等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/roadsigns.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">道路標識</td>
+                                        <td class="three-detail">防具等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sheetmetal.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">板金</td>
+                                        <td class="three-detail">防具、風力発電をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/metalblade.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">	金属刃</td>
+                                        <td class="three-detail">近接武器やツール等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/metalpipe.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">金属パイプ</td>
+                                        <td class="three-detail">武器や弾薬等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/metalspring.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">金属バネ</td>
+                                        <td class="three-detail">銃火器等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sewingkit.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">裁縫道具</td>
+                                        <td class="three-detail">衣服や防具等をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/smgbody.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">SMG本体</td>
+                                        <td class="three-detail">SMG系をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/semibody.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">セミオート本体</td>
+                                        <td class="three-detail">セミオート系をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/riflebody.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ライフル本体</td>
+                                        <td class="three-detail">ライフル系をクラフトするのに必要なアイテム</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/bleach.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">漂白剤</td>
+                                        <td class="three-detail">現時点では通常入手不可能で使い道がない</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/ducttape.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">ダクトテープ</td>
+                                        <td class="three-detail">現時点では通常入手不可能で使い道がない</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/glue.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">接着剤</td>
+                                        <td class="three-detail">現時点では通常入手不可能で使い道がない</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sticks.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">棒</td>
+                                        <td class="three-detail">現時点では通常入手不可能で使い道がない</td>
+                                    </tr>
+                                    </table>
+                                    <div class="ad-wrap">
+                                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                             crossorigin="anonymous"></script>
+                                        <!-- スクエア -->
+                                        <ins class="adsbygoogle"
+                                             style="display:block"
+                                             data-ad-client="ca-pub-5656157405700657"
+                                             data-ad-slot="1847475817"
+                                             data-ad-format="auto"
+                                             data-full-width-responsive="true"></ins>
+                                        <script>
+                                             (adsbygoogle = window.adsbygoogle || []).push({});
+                                        </script>
+                                                                    </div>   
+                                    <table border="1">
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/carburetor1.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">	低品質のキャブレター</td>
+                                        <td class="three-detail">低性能なエンジンパーツの1つ。最高速度と燃費が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/crankshaft1.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">低品質のクランクシャフト</td>
+                                        <td class="three-detail">低性能なエンジンパーツの1つ。最高速度が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/piston1.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">低品質のピストン</td>
+                                        <td class="three-detail">低性能なエンジンパーツの1つ。最高速度と加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sparkplug1.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">低品質の点火プラグ</td>
+                                        <td class="three-detail">低性能なエンジンパーツの1つ。加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/valve1.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">低品質のバルブ</td>
+                                        <td class="three-detail">低性能なエンジンパーツの1つ。燃費が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/carburetor2.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">中品質のキャブレター</td>
+                                        <td class="three-detail">中性能なエンジンパーツの1つ。最高速度と燃費が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/crankshaft2.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">中品質のクランクシャフト</td>
+                                        <td class="three-detail">中性能なエンジンパーツの1つ。最高速度が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/piston2.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">中品質のピストン</td>
+                                        <td class="three-detail">中性能なエンジンパーツの1つ。最高速度と加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sparkplug2.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">中品質の点火プラグ</td>
+                                        <td class="three-detail">中性能なエンジンパーツの1つ。加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/valve2.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">中品質のバルブ</td>
+                                        <td class="three-detail">中性能なエンジンパーツの1つ。燃費が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/carburetor3.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高品質のキャブレター</td>
+                                        <td class="three-detail">性能なエンジンパーツの1つ。最高速度と燃費が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/crankshaft3.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高品質のクランクシャフト</td>
+                                        <td class="three-detail">性能なエンジンパーツの1つ。最高速度が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/piston3.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高品質のピストン</td>
+                                        <td class="three-detail">性能なエンジンパーツの1つ。最高速度と加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/sparkplug3.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高品質の点火プラグ</td>
+                                        <td class="three-detail">性能なエンジンパーツの1つ。加速が影響する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/valve3.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">高品質のバルブ</td>
+                                        <td class="three-detail">性能なエンジンパーツの1つ。燃費が影響する</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="three-icon">アイコン</th>
+                                        <th class="three-name">名前</th>
+                                        <th class="three-detail">詳細</th>
+                                        <th class="three-socket">ソケット数</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.chassis.2mod.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">車両シャーシ 2</td>
+                                        <td class="three-detail">最大2つの車両モジュールを乗せることが可能(アイテム化不可能)</td>
+                                        <td class="three-socket">×</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.chassis.3mod.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">車両シャーシ 3</td>
+                                        <td class="three-detail">最大3つの車両モジュールを乗せることが可能(アイテム化不可能)</td>
+                                        <td class="three-socket">×</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.chassis.4mod.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">車両シャーシ 4</td>
+                                        <td class="three-detail">最大4つの車両モジュールを乗せることが可能(アイテム化不可能)</td>
+                                        <td class="three-socket">×</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.cockpit.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">コックピット車両モジュール</td>
+                                        <td class="three-detail">運転席と助手席を備えた基本モジュールだが、これ単一では動かせない</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.cockpit.with.engine.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">エンジン付きコックピット車両モジュール</td>
+                                        <td class="three-detail">運転席と助手席、小型エンジンを備えたモジュール</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.cockpit.armored.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">装甲コックピット車両モジュール</td>
+                                        <td class="three-detail">通常のコックピットよりも遮蔽物が多く、運転手と乗客を保護します。さらに窓には上下に動くようになっています</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.engine.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">エンジン車両モジュール</td>
+                                        <td class="three-detail">ピストン、点火プラグ、バルブのスロットを2つ備えたエンジンで高品質なエンジン部品をセットすることにより小型エンジンよりもパワーと最高速度を出す</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.flatbed.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">短い平台車両モジュール</td>
+                                        <td class="three-detail">無作為にプレイヤーを運搬できるモジュール</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.2mod.flatbed.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">長い平台車両モジュール</td>
+                                        <td class="three-detail">シングルよりも長い為、より多くのプレイヤーを運搬することができる</td>
+                                        <td class="three-socket">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.2mod.passengers.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">乗用車両モジュール</td>
+                                        <td class="three-detail">6人分の座席を備えたモジュール</td>
+                                        <td class="three-socket">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.passengers.armored.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">装甲乗用車モジュール</td>
+                                        <td class="three-detail">装甲を備えた2人分の座席モジュール</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.rear.seats.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">後部座席車両モジュール</td>
+                                        <td class="three-detail">2人分の座席を備えたモジュール</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.taxi.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">タクシー車両モジュール</td>
+                                        <td class="three-detail">普通の乗用車モジュールと違って、フロントにガラスで保護されており、中心にはトレードができる機構が備わっている。車のカギをかけてもこのモジュールは鍵がかからない	</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.2mod.fuel.tank.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">燃料タンク車両モジュール</td>
+                                        <td class="three-detail">液体を運搬できるモジュール。※現時点では水しか運べない</td>
+                                        <td class="three-socket">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three-icon"><img src="article/image/comp/vehicle.1mod.storage.png" loading="lazy" alt=""></td>
+                                        <td class="three-name">保管車両モジュール</td>
+                                        <td class="three-detail">通常のボックスと同じで最大18スロットの保管スペースを有している。単体で鍵をかけることはできない</td>
+                                        <td class="three-socket">1</td>
+                                    </tr>
+                                </table>
+                            </div>    
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rust攻略 武器</title>
+        <meta name="description" content="Rustの武器や弾に関する情報を掲載しています。武器に関する情報が必要な方は参考にしてください。">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--css設定-->
+
+        <link rel="stylesheet" href="article/css/reset.css">
+        <link rel="stylesheet" href="article/css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="article/image/picture/fab/rust.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <header id="global-header-wrap">
+            <div id="global-header">
+                <a href="https://rust-wiki.net/"><img class="header-icon-1" src="https://rust-wiki.net/some/img/icon/DzrVneqUcAARoIa.png" alt=""></a>
+                <a href="https://rust-wiki.net/"><div id="title-1">格ゲー総合攻略</div></a> 
+            </div>
+        </header>
+        <header id="local-header-wrap">
+            <div id="local-header">
+                <a href="https://rust-wiki.net/rust/index.html"><img class="header-icon" src="article/image/picture/fab/rust.png" loading="lazy" alt=""></a>
+                <a href="https://rust-wiki.net/rust/index.html"><h1 id="title">RUST 攻略wiki</h1></a> 
+            </div>
+        </header>
+               <main>
+            <div id="wrapper-a">
+                <div id="menu">
+                    <nav class="up-menu"> 
+                        <ul class="up-nav-menu">
+                            <li><a class="up-menu-item" href="index.html">TOP</a></li>
+                            <li><a class="up-menu-item" href="update.html">アプデ</a></li>
+                            <li><a class="up-menu-item" href="beginner.html">初心者</a></li>
+                            <li><a class="up-menu-item" href="start.html">序盤</a></li>
+                            <li><a class="up-menu-item" href="weapon.html">武器一覧</a></li>
+                            <li><a class="up-menu-item" href="Monument.html">モニュメント</a></li>
+                            <li><a class="up-menu-item" href="usefull.html">便利ツール</a></li>
+                            <li><a class="up-menu-item" id="last-up-menu-item" href="contact.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav id="breadcrumb-wrap">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net">
+                      <span itemprop="name">格ゲー総合攻略</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://rust-wiki.net/rust">
+                      <span itemprop="name">RUST攻略</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <!--
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>-->
+              </ol>
+            </nav>
+            <div id="contents-wrap">
+                
+                <div id="contents-b">
+                    <div class="article-wrap">
+                        <div class="article">
+                            <dl id="news-wrap">
+                                <div id="careful-item-wrap">
+                                    <dt id="news-title">RUST攻略からのお知らせ</dt>
+                                        <dd class="careful-item"><a href="ps4news.html">・PS4版ハロウィンアップデート</a></dd>
+                                        <dd class="careful-item">・webページの大幅改革によりサイト内が混乱しています。一週間ほどで完成しますので今しばらくお待ちください</dd>
+                                        <dd class="careful-item"><a href=""></a></dd>
+                                </div>
+                            </dl>
+                            <span class="h1-sub">【RUST】</span>
+                            <div>
+                                <h1>武器&弾</h1>
+                            </div>
+                            <div class="weapon-graf">
+                                <table border="1">
+                                    <tr>
+                                        <th class="weapon-icon">アイコン</th>
+                                        <th class="weapon-name">名前</th>
+                                        <th>弾薬数</th>
+                                        <th>弾薬</th>
+                                        <th>詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/m249.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">M249</td>
+                                        <td class="ammo-level">100</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">非常に高火力で超遠距離以外に向いている</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/ak.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">アサルトライフル</td>
+                                        <td class="ammo-level">30</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">	通称AK。高火力だがリコイル(発砲時の反動)が激しく扱いに慣れる必要がある。近・中距離向け。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/lr.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">LR-300</td>
+                                        <td class="ammo-level">30</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">M4タイプのアサルトライフル、なかなかの威力と低いリコイルで扱いやすい。近・中距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/bolt.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ボルトアクション式ライフル</td>
+                                        <td class="ammo-level">4</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">精度と飛距離、威力が非常に高く、ヘッドショットは即死級のダメージとなる。ただしボルトアクションのため1発1発しか打てない。遠距離に強い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/l96.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">L96 Rifle</td>
+                   
+                                        <td class="ammo-level">5</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">ボルトアクションライフルよりも射程距離が長く弾道が落ちにくいスナイパーライフル。ただしコッキング時間が長いのが欠点。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/semi.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">セミオートライフル</td>
+                                
+                                        <td class="ammo-level">16</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">セミオート式のライフル。アイアンサイトが見ずらい。中・近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/39.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">M39 Rifle	</td>
+                       
+                                        <td class="ammo-level">20</td>
+                                        <td class="ammo-use">5.56mm</td>
+                                        <td class="detail">軍用セミオートライフル。射程とダメージが従来のセミオートライフルよりも高いが1発の反動が少し高い</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/smg.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">カスタムSMG</td>
+                      
+                                        <td class="ammo-level">24</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">非常に高い連射力を誇る。ただし中距離以降から精度が愕然と落ちる。中・近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/tomp.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">トンプソン</td>
+                                     
+                                        <td class="ammo-level">20</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">リコイルが小さく、扱いやすい。アップデートによりレーザーサイト、フラッシュライトはつけれる用になった。中・近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/mp5.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">MP5A4</td>
+                        
+                                        <td class="ammo-level">30</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">まずまずの連射力を持つ銃。ただし、ダメージはトンプソンよりやや低い</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/semip.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">セミオート式ピストル</td>
+                                        <td class="ammo-level">10</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">ピストルだが、精度がそれなりにある。連射もしやすい。やや中・近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/m92.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">M92ピストル</td>
+                                        <td class="ammo-level">15</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">	通常ドロップおよびクラフトできないアイテムだが威力はセミオートピストルよりは上</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/lebol.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">マグナムリボルバー</td>
+                                        <td class="ammo-level">6</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">ピストル系では最強。タレットに装着すると真価を発揮する</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/lebolber.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">リボルバー</td>
+                                        <td class="ammo-level">8</td>
+                                        <td class="ammo-use">ピストル弾</td>
+                                        <td class="detail">8連発式の銃。威力はそこそこ。近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/roke.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ロケットランチャー</td>
+                                        <td class="ammo-level">1</td>
+                                        <td class="ammo-use">ロケット弾</td>
+                                        <td class="detail">ロケット弾による広範囲にダメージを与えることが可能。拠点破壊や焼夷弾を使った防衛用と用途は様々。中・遠距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/gurean.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">グレネードランチャー</td>
+                                        <td class="ammo-level">6</td>
+                                        <td class="ammo-use">グレネード弾</td>
+                                        <td class="detail">グレネード弾による広範囲にダメージを与えることが可能。拠点破壊やスモーク弾を使った防衛用と用途は様々。弾はバウンドしない。中距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/saiga.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">Spas-12 ショットガン</td>
+                                        <td class="ammo-level">6</td>
+                                        <td class="ammo-use">12ゲージ＆手作りの散弾</td>
+                                        <td class="detail">サイティングしたまま連射が可能なショットガン</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/ponpu.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ポンプアクション式ショットガン	</td>
+                                        <td class="ammo-level">6</td>
+                                        <td class="ammo-use">12ゲージ＆手作りの散弾</td>
+                                        <td class="detail">連射できるショットガン。近距離に絶大な効果を誇る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/daburu.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ダブルバレルショットガン</td>
+                                        <td class="ammo-level">2</td>
+                                        <td class="ammo-use">12ゲージ＆手作りの散弾</td>
+                                        <td class="detail">2重装のショットガン、セミオート式だがリロードに時間がかかる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/suidoukan.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">水道管のショットガン</td>
+                                        <td class="ammo-level">1</td>
+                                        <td class="ammo-use">12ゲージ＆手作りの散弾</td>
+                                        <td class="detail">1発ずつしか打てないのでここぞ！というときには役に立つ。遠征とかに非常用として持ってくのもよい。近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/eoka.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">エオカピストル</td>
+                                        <td class="ammo-level">1</td>
+                                        <td class="ammo-use">手作りの散弾</td>
+                                        <td class="detail">これも1発ずつしか打てないが、打つのに時間がかかる。ピストルなのにショットガンの弾しか使えない。近距離向け</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/kaennhousya.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">火炎放射器</td>
+                                        <td class="ammo-level">100</td>
+                                        <td class="ammo-use">低質燃料</td>
+                                        <td class="detail">燃えやすいものを燃やすのに最適だが、それ以外や対人にはほとんど向かない。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/9c877b8fc4ff3582-s.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ネイルガン</td>
+                                        <td class="ammo-level">16</td>
+                                        <td class="ammo-use">ネイルガン</td>
+                                        <td class="detail">近距離にしか適さず、弾速も遅い。ダメージも弱いためあくまでほぼ序盤専用の銃</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/aPt_rrMkZL.water-s.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">ウォーターガン</td>
+                                        <td class="ammo-level">1,000ml</td>
+                                        <td class="ammo-use">水</td>
+                                        <td class="detail"><p class="careful">※DLC「Rust - Sunburn Pack」を所持していないとクラフト不可能</p></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/Q1fYd_qACq.water-s.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">水鉄砲</td>
+                                        <td class="ammo-level">250ml</td>
+                                        <td class="ammo-use">水</td>
+                                        <td class="detail"><p class="careful">※DLC「Rust - Sunburn Pack」を所持していないとクラフト不可能</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/FurXeEvq_h-s.png" loading="lazy" alt=""></td>
+                                        <td  class="weapon-name">スノーボールガン</td>
+                                        <td class="ammo-level">50</td>
+                                        <td class="ammo-use">雪玉</td>
+                                        <td class="detail"><p class="careful">※DLC「Rust - Sunburn Pack」を所持していないとクラフト不可能</p></td>
+                                    </tr>
+                                </table><br>
+                                <div class="ad-wrap">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                         crossorigin="anonymous"></script>
+                                    <!-- スクエア -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-5656157405700657"
+                                         data-ad-slot="1847475817"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                                                </div>   
+                                <div>
+                                    <h2>
+                                        近接・その他の武器
+                                    </h2>
+                                </div><br>
+                                <table>
+                                    <tr>
+                                        <th class="weapon-icon">アイコン</th>
+                                        <th class="weapon-name">名前</th>
+                                        <th class="repair">修理</th>
+                                        <th class="detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/gure.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">F1グレネード</td>
+                                        <td class="repair">×</td>
+                                        <td class="detail">投げる爆発物。投げたら確実に爆発する。現在、建築物へのダメージは無効</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/mame.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">豆間グレネード</td>
+                                        <td class="repair">×</td>
+                                        <td class="detail">	投げたら爆発するかしないかの50%爆発物。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/kyouka.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">強化弓</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">弓と違い溜めて飛距離を伸ばすことができる弓矢</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/bougan.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ボウガン</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">リロードは長いが弓よりもダメージを与えることができる。またアタッチメントも付けられる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/yumi.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">弓</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">一般的な飛び道具。軽装備としても向いている。リロードも短い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/yari.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">木の槍</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">近接武器、やり投げ選手のように投げて当てることが可能。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/ishiyari.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">石の槍</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">木の槍よりも強いが、強さがずば抜けてるため、当たり所が悪いと即死級ダメージが入る。もしかするとボウガンよりも強いかも</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/padoru.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">パドル</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">殴ってより、投げてよし、漕いでよしと少し汎用性があるパドル</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/meisu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">メイス</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">当たり判定がそこそこ広い武器</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/naihu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">コンバットナイフ</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">死骸処理や格闘に最適。それ以外の用途に使うと耐久がかなり減る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/nata.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ロングソード</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">	メイスほどの当たり判定はないが威力はそこそこ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/ono.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">廃材の包丁</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">性能はメイスとあまり変わらない。ドラム缶を一撃で割れる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/so-do.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">廃材の剣</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">耐久が高いためドラム缶の破壊等に適してる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/nata2.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ナタ</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">廃材の剣同様、耐久が低いものを壊すのに適している</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/honenaihu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">骨製のナイフ</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">素早い攻撃が可能。死骸処理に向いてる</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/hone.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">骨のこんぼう</td>
+                                        <td class="repair">×</td>
+                                        <td class="detail">ダメージはそこそこ。壊れると消滅するため、敵拠点を落とす時とかに使われる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/houtyo.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ブッチャーナイフ</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">ハロウィン時に入手可能な武器で、一般入手は不可</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/kumate.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">熊手</td>
+                                        <td class="repair">〇</td>
+                                        <td class="detail">ハロウィン時に入手可能な武器で、一般入手は不可</td>
+                                    </tr>
+                                </table><br>
+                                <div>
+                                    <h2>
+                                        弾
+                                    </h2>
+                                </div><br>
+                                <table>
+                                    <tr>
+                                        <th class="weapon-icon">アイコン</th>
+                                        <th class="weapon-name">名前</th>
+                                        <th class="detail">詳細</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/5.56tu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name2">5.56mmライフル弾</td>
+                                        <td class="detail">ライフル専用の弾</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/5.56rai.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">5.56mmライフル弾(高速)</td>
+                                        <td class="detail">通常弾よりも早く飛び、精度もやや高い。ダメージは即死級？</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/5.56syo.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">5.56mmライフル弾(焼夷)</td>
+                                        <td class="detail">着弾時にたまに発火するライフル弾。弾速が遅いがダメージはそこそこ高い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/5.56saku.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">5.56mmライフル弾(炸裂)</td>
+                                        <td class="detail">着弾時に爆発するライフル弾。周りにもダメージが入るため、足元に打つとややダメージが入る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/pisu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ピストル弾</td>
+                                        <td class="detail">ピストル専用の弾。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/pisuko.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ピストル弾(高速)</td>
+                                        <td class="detail">通常よりも早く飛び精度がやや上がる。ダメージもやや高い</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/pisusyo.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ピストル弾(焼夷)</td>
+                                        <td class="detail">着弾時にたまに発火し炎症ダメージを与える。弾速が遅い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/roketu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ロケット弾</td>
+                                        <td class="detail">通常のロケットランチャーの弾。周りにもダメージが入る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/rokeko.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ロケット弾(高速)</td>
+                                        <td class="detail">通常弾よりも早く飛び、飛距離がやや長いがダメージが低い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/rokesyo.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ロケット弾(焼夷)</td>
+                                        <td class="detail">弾速がとても遅いが着弾すると周りに発火する。拠点防衛でかなり役に立つ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/rokekemu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">発煙ロケット弾</td>
+                                        <td class="detail">着弾時に煙幕が発生するが、今現在では打てるが未完成状態。サーバー管理者権限でゲットできます。レシピも存在します。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/sam.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">SAM</td>
+                                        <td class="detail">地対空ミサイルの弾薬。標的を自動追尾する機能を備えているが、使用するには専用のSAMタレットへの装填が必要</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/guretu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">40mm HEグレネード弾</td>
+                                        <td class="detail">グレネードランチャーの弾。周りにもダメージが入る。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/gureSG.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">40mm ショットガン弾</td>
+                                        <td class="detail">グレネードランチャーの弾。ショットガンの弾とほぼ同じ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/guresmoke.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">40mm スモークグレネード弾</td>
+                                        <td class="detail">グレネードランチャーの弾。周りにはダメージが入らず、スモークが出るだけ。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/sanndann.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">手作りの散弾</td>
+                                        <td class="detail">低コストだが、速度が遅く威力が弱い。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/12ge.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">12ゲージ散弾</td>
+                                        <td class="detail">ショットガン用の一般的な弾。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/suragu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">12ゲージスラグ弾</td>
+                                        <td class="detail">散弾ではなく単発の弾丸が出るショットガン。単発なので命中率に欠ける。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/Sgsyoui.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">12ゲージ焼夷弾</td>
+                                        <td class="detail">発砲時に火花と付近を炎上させることができる弾</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/ya.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">木の矢</td>
+                                        <td class="detail">弓やボウガン用の一般的な矢。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/kousokuya.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">高速矢</td>
+                                        <td class="detail">ダメージ量を犠牲にする代わりに速度と飛距離を上げる。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/honeno.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">骨の矢</td>
+                                        <td class="detail">高速矢よりは射程は劣るがヒットしやすい</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/hinoya.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">火の矢</td>
+                                        <td class="detail">弾頭が炎上しており、着弾点を炎上させる能力がある</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weapon-icon"><img src="article/image/weapon/neisu.png" loading="lazy" alt=""></td>
+                                        <td class="weapon-name">ネイルガンの釘</td>
+                                        <td class="detail">ネイルガン専用の弾。他には使えない</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ad-wrap">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                    crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-5656157405700657"
+                                    data-ad-slot="1847475817"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>                       
+                        </div>
+                    </div>
+                    </div>
+                    <div id="contents-a">
+                    <div class="left-menu-wrap">
+                        <!--ここから左メニュー-->
+                        <div class="left-nav-menu">
+                            <h2>※よく検索されているワード関連</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="howtoget.html">ロケットランチャーの入手方法</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>攻略TOP</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="index.html">PC版 攻略TOP</a></li>
+                                <li class="news"><a class="news-item" href="ps4index.html">PS4版 攻略TOP</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>最新情報/イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="news.html">総合最新情報</a></li>
+                                <li class="news"><a class="news-item" href="update.html">PC版アップデート情報</a></li>
+                                <li class="news"><a class="news-item" href="ps4news.html">PS4版アップデート情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>初心者メニュー</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="server.html">ゲームの説明</a></li>
+                                <li class="news"><a class="news-item" href="beginner-server.html">おすすめサーバー</a></li>
+                                <li class="news"><a class="news-item" href="start.html">序盤の進め方</a></li>
+                                <li class="news"><a class="news-item" href="setting.html">ゲーム設定</a></li>
+                                <li class="news"><a class="news-item" href="play.html">操作方法</a></li>
+                                <li class="news"><a class="news-item" href="question.html">よくある質問</a></li>
+                            </ul>
+                        </div>  
+                        <div class="left-nav-menu">
+                            <h2>アイテム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="weapon.html">武器＆弾</a></li>
+                                <li class="news"><a class="news-item" href="equipment.html">服＆装備</a></li>
+                                <li class="news"><a class="news-item" href="tool.html">ツール</a></li>
+                                <li class="news"><a class="news-item" href="architecture.html">建築関係</a></li>
+                                <li class="news"><a class="news-item" href="install.html">設置物</a></li>
+                                <li class="news"><a class="news-item" href="food.html">食べ物＆回復アイテム</a></li>
+                                <li class="news"><a class="news-item" href="sozai.html">素材</a></li>
+                                <li class="news"><a class="news-item" href="comp.html">コンポーネント</a></li>
+                                <li class="news"><a class="news-item" href="elext.html">電気関係</a></li>
+                                <li class="news"><a class="news-item" href="another.html">それ以外</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>アイテムシステム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="craft.html">クラフトレシピ</a></li>
+                                <li class="news"><a class="news-item" href="reserch.html">リサーチコスト</a></li>
+                                <li class="news"><a class="news-item" href="recycler.html">リサイクラー</a></li>
+                                <li class="news"><a class="news-item" href="vend.html">自動販売機</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>システム</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="blue.html">ブループリントシステム</a></li>
+                                <li class="news"><a class="news-item" href="elextsystem.html">Electricity(電気)</a></li>
+                                <li class="news"><a class="news-item" href="build.html">Building(建築)</a></li>
+                                <li class="news"><a class="news-item" href="tree.html">技術ツリー</a></li>
+                                <li class="news"><a class="news-item" href="agri.html">農業</a></li>
+                                <li class="news"><a class="news-item" href="mix.html">ミキシング</a></li>
+                                <li class="news"><a class="news-item" href="remote.html">リモートコントロール</a></li>
+                                <li class="news"><a class="news-item" href="app.html">アプリ</a></li>
+                                <li class="news"><a class="news-item" href="drone.html">ドローンデリバリー</a></li>
+                                <li class="news"><a class="news-item" href="call.html">電話</a></li>
+                                <li class="news"><a class="news-item" href="party.html">パーティー</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメントパズル</h2>
+                            <ul>
+
+                                <li class="news"><a class="news-item" href="Monument.html">モニュメントパズル</a></li>
+                                <li class="news"><a class="news-item" href="rocket.html">ロケット発射場</a></li>
+                                <li class="news"><a class="news-item" href="military.html">軍事トンネル</a></li>
+                                <li class="news"><a class="news-item" href="watertreatment.html">水処理場</a></li>
+                                <li class="news"><a class="news-item" href="airfield.html">飛行場</a></li>
+                                <li class="news"><a class="news-item" href="powerplant.html">発電所</a></li>
+                                <li class="news"><a class="news-item" href="trainyard.html">トレインヤード</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(大)</a></li>
+                                <li class="news"><a class="news-item" href="horbor.html">港(小)</a></li>
+                                <li class="news"><a class="news-item" href="parabora.html">パラボラアンテナ</a></li>
+                                <li class="news"><a class="news-item" href="sewer.html">下水道ブランチ</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>モニュメント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="building.html">建造物一覧</a></li>
+                                <li class="news"><a class="news-item" href="loot.html">LootBox</a></li>
+                                <li class="news"><a class="news-item" href="oil.html">オイルリグ(Oil Rig)</a></li>
+                                <li class="news"><a class="news-item" href="lab.html">水中ラボ</a></li>
+                                <li class="news"><a class="news-item" href="jack.html">巨大削岩機</a></li>
+                                <li class="news"><a class="news-item" href="safezone.html">前哨基地(セーフゾーン)</a></li>
+                                <li class="news"><a class="news-item" href="camp.html">バンディットキャンプ</a></li>
+                                <li class="news"><a class="news-item" href="gyoson.html">漁村</a></li>
+                                <li class="news"><a class="news-item" href="bokuzyo.html">牧場</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>乗り物</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="kayak.html">カヤック</a></li>
+                                <li class="news"><a class="news-item" href="boat.html">ボート</a></li>
+                                <li class="news"><a class="news-item" href="Rhib.html">RHIB</a></li>
+                                <li class="news"><a class="news-item" href="kikyu.html">熱気球</a></li>
+                                <li class="news"><a class="news-item" href="mini.html">ミニコプター</a></li>
+                                <li class="news"><a class="news-item" href="sheli.html">スクラップ輸送ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="horse.html">馬</a></li>
+                                <li class="news"><a class="news-item" href="car.html">車両</a></li>
+                                <li class="news"><a class="news-item" href="workcart.html">ワークカート</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="air.html">エアードロップ</a></li>
+                                <li class="news"><a class="news-item" href="heli.html">ヘリコプター</a></li>
+                                <li class="news"><a class="news-item" href="apc.html">APC戦車</a></li>
+                                <li class="news"><a class="news-item" href="ch47.html">CH47</a></li>
+                                <li class="news"><a class="news-item" href="cargo.html">貨物船</a></li>
+                                <li class="news"><a class="news-item" href="npc.html">NPC</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>季節イベント</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="haro.html">ハロウィン</a></li>
+                                <li class="news"><a class="news-item" href="xmas.html">クリスマス</a></li>
+                                <li class="news"><a class="news-item" href="egg.html">イースター</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-nav-menu">
+                            <h2>レイド</h2>
+                            <ul>
+                                <li class="news"><a class="news-item" href="raid.html">レイドとは</a></li>
+                                <li class="news"><a class="news-item" href="raid2.html">近接レイド</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-c">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656157405700657"
+                                     crossorigin="anonymous"></script>
+                                <!-- スクエア -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-5656157405700657"
+                                     data-ad-slot="1847475817"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                    <div class="right-menu-wrap">
+                        <h2>ランキング</h2>
+                        <ul>
+                            <li class="rank-1-next"><span class="rank-1">1</span><a href="scrap.html">効率のいいスクラップの集め方</a></li>
+                            <li class="rank-1-next"><span class="rank-2">2</span><a href="howtoget.html">ロケット発射場のモニュメントパズル</a></li>
+                            <li class="rank-1-next"><span class="rank-3">3</span><a href="ps4news.html">PS4版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">4</span><a href="start.html">序盤の進め方</a></li>
+                            <li class="rank-1-next"><span class="rank-4">5</span><a href="wipe.html">ワイプとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">6</span><a href="craft.html">クラフトレシピ</a></li>
+                            <li class="rank-1-next"><span class="rank-4">7</span><a href="update.html">PC版アップデート情報</a></li>
+                            <li class="rank-1-next"><span class="rank-4">8</span><a href="raid.html">レイドとは</a></li>
+                            <li class="rank-1-next"><span class="rank-4">9</span><a href="cargo.html">貨物船</a></li>
+                            <li class="rank-1-next"><span class="rank-4">10</span><a href="tree.html">技術ツリー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <p><small>&copy; 2021 Rust 攻略wiki</small></p>
+            </div>
+        </footer>
+    </body>
+</html>
